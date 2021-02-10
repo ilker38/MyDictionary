@@ -12,7 +12,7 @@ namespace MyDictionary
             isimler.Add(48, "Ali");
             Console.WriteLine(isimler.Length);
             foreach (var item in isimler.Values)
-            {
+            { 
                 Console.WriteLine(item);
             }
 
