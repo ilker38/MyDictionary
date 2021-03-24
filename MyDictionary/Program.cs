@@ -6,18 +6,25 @@ namespace MyDictionary
     {
         static void Main(string[] args)
         {
-            MyList<int,string > isimler = new MyList<int,string>();
-            isimler.Add(84,"Veli");
+            MyList<string> isimler = new MyList<string>();
+            isimler.Add("ilker");
+
             Console.WriteLine(isimler.Length);
-            isimler.Add(48, "Ali");
+
+            isimler.Add("Veli");
+
             Console.WriteLine(isimler.Length);
-            foreach (var item in isimler.Values)
-            { 
-                Console.WriteLine(item);
+
+            foreach (var isim in isimler.Items)
+            {
+                Console.WriteLine(isim);
             }
 
+            Console.WriteLine("Hello World!");
 
         }
+
     }
-    
 }
+
+
